@@ -1,0 +1,110 @@
+indirizzo
+
+192.168.168.145
+
+credenziali utente principale
+
+innovazione
+vittorio96
+
+Starting odoo-server: odoo-server.
+-----------------------------------------------------------
+Done! The Odoo server is up and running. Specifications:
+Port: 8069
+User service: odoo
+Configuraton file location: /etc/odoo-server.conf
+Logfile location: /var/log/odoo
+User PostgreSQL: odoo
+Code location: odoo
+Addons folder: odoo/odoo-server/addons/
+Password superadmin (database): password96
+Start Odoo service: sudo service odoo-server start
+Stop Odoo service: sudo service odoo-server stop
+Restart Odoo service: sudo service odoo-server restart
+Nginx configuration file: /etc/nginx/sites-available/odoo16
+-----------------------------------------------------------
+
+master password is password96
+
+login administrator
+informatico@robertelli.com
+vittorio96
+
+tolgo filtraggio "applicazioni" (comparirà anche il resto)
+attivo "Italia - Contabilità"
+Italia - E-fatturazione
+Vendite
+Contatti
+Acquisti
+Magazzino
+Produzione
+
+dopo aver copiato i custom addons
+
+attivo "ITA - Contabilità base" (qui occorre installare da prompt xmlschema)
+ITA - Codici bancari ABI/CAB
+ITA - Natura delle aliquote IVA
+ITA - Libro giornale - Reportlab
+ITA - Documento di trasporto
+ITA - Documento di trasporto - Prelievo raggruppato
+ITA - Documento di trasporto - Collegamento con ordine di vendita/acquisto
+ITA - Fattura elettronica - Base
+
+installare libreria python codicefiscale (sudo pip install codicefiscale - sudo pip install asn1crypto)
+
+disattivare Italia - E-fatturazione (ed altro che propone)
+
+ITA - Fattura elettronica - Base
+
+sudo pip install unidecode
+
+ITA - Fattura elettronica - Export ZIP
+ITA - Fattura elettronica - Emission
+ITA - Fattura elettronica - Emissione
+TA - Stato patrimoniale e conto ec
+ITA - Ricevute bancarie
+ITA - Inversione contabile
+ITA - Email PEC (non si installa)
+ITA - Registri IVA
+ITA - Liquidazione IVA
+ITA - Fattura elettronica - Import ZIP
+ITA - Fattura elettronica - Integra
+ITA - Codici carica
+ITA - Codici Ateco
+
+aggiunti ma mancantiin fresh installazion with ext apps
+
+ITA - Ritenuta d'acconto - Paga
+
+
+
+Account - Missing Menus & Sax
+Note di debito
+
+Fiscal Years - Automatic Creation
+Data di chiusura irrevocabile
+Account Move Budget
+General sequence in account j
+
+
+infine occorre installare per gestire gli estratti conto
+
+account_statement_base
+account_reconcile_oca
+
+
+
+
+
+sudo apt-get install -y software-properties-common && \
+sudo apt-add-repository -y "deb http://security.ubuntu.com/ubuntu bionic-security main" && \
+sudo apt-get -yq update && \
+sudo apt-get install -y libxrender1 libfontconfig1 libx11-dev libjpeg62 libxtst6 \
+                           fontconfig xfonts-75dpi xfonts-base libpng12-0 && \
+wget "https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb" && \
+sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb && \
+sudo apt-get -f install
+
+
+
+
