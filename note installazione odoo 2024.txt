@@ -72,7 +72,7 @@ ITA - Fattura elettronica - Integra
 ITA - Codici carica
 ITA - Codici Ateco
 
-aggiunti ma mancantiin fresh installazion with ext apps
+aggiunti ma mancanti in fresh installazion with ext apps
 
 ITA - Ritenuta d'acconto - Paga
 
